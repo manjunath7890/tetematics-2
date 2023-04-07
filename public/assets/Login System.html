@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:3000/route/dashboard -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <script src="./Login System_files/axios.min.js.download"></script>
+
+    <link href="./Login System_files/css2" rel="stylesheet">
+    <script src="./Login System_files/raphael.min.js.download"></script>
+    <script src="./Login System_files/justgage.min.js.download"></script>
+    <script src="./Login System_files/chart.js.download"></script> 
+    <script src="./Login System_files/jquery-3.6.0.min.js.download"></script>
+    <script src="./Login System_files/raphael-2.1.4.min.js.download"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/justgage.js"></script> -->
+   
+
+    <link rel="stylesheet" href="./Login System_files/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Login System_files/style.css">
+    <link rel="stylesheet" href="./Login System_files/login-css.css">
+    <link rel="stylesheet" href="./Login System_files/tabble.css">  
+    <!-- <link rel="stylesheet" href="/static/dashboard-light.css" class="active"> -->
+    <link id="css-file" rel="stylesheet" type="text/css" href="./Login System_files/dashboard-light.css" class="active">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1102.0" data-gr-ext-installed="">
+<div class="" id="login">
+    <div class=" container-edit"> 
+        <!-- <a href="#" class="logo"></a>     -->
+        <button onclick="toggleCSS()" class="logo"></button>  
+        <a href="http://localhost:3000/route/dashboard" class="element-dash"> dashboard</a>
+        <a href="http://localhost:3000/route/dashboard2" class="element-dash"> dashboard2</a>
+        <a href="http://localhost:3000/route/dashboard3" class="element-dash"> dashboard3</a>
+        <a href="http://localhost:3000/raw-data/table" class="element-dash"> dashboard4</a>
+        <a href="http://localhost:3000/route/about" class="element-about"> about us</a>
+        <a class="element-user">admin@gmail.com</a>
+        <a href="http://localhost:3000/route/logout" class="element-logout">Logout</a>
+    </div>
+</div>
+  <div class="main-content">
+
+    <div id="map-container" class="value value-blocks-1">
+      <div class="combined">
+        <div class="buttons">
+          
+          <p class="value-top" id="value-v0">00</p>
+        </div>
+
+        <div>
+          <div class="guages" style="display: flex;">
+            <div class="ind-val-guage ind-val-guage-speed">
+              <div id="value-v67" width="200" height="200"><svg height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.3.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><filter id="inner-shadow-value-v67"><feoffset dx="0" dy="3"></feoffset><fegaussianblur result="offset-blur" stdDeviation="5"></fegaussianblur><fecomposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"></fecomposite><feflood flood-color="black" flood-opacity="0.2" result="color"></feflood><fecomposite operator="in" in="color" in2="inverse" result="shadow"></fecomposite><fecomposite operator="over" in="shadow" in2="SourceGraphic"></fecomposite></filter></defs><path fill="#edebeb" stroke="none" d="M75,120L30,120A120,120,0,0,1,270,120L225,120A75,75,0,0,0,75,120Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="#7124ff" stroke="none" d="M75,120L30,120A120,120,0,0,1,247.0820393249937,49.46576972490324L210.67627457812105,75.91610607806453A75,75,0,0,0,75,120Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="150" y="117.64705882352942" text-anchor="middle" font-family="Arial" font-size="23px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 23px; font-weight: bold; fill-opacity: 1;" font-weight="bold" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">40</tspan></text><text x="150" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan></text><text x="52.5" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><text x="247.5" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text></svg></div>
+              <div class="val-speed">Speed</div>
+            </div>
+            <div class="ind-val-guage ind-val-guage-slope">
+              <div id="value-v317"><svg height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.3.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><filter id="inner-shadow-value-v317"><feoffset dx="0" dy="3"></feoffset><fegaussianblur result="offset-blur" stdDeviation="5"></fegaussianblur><fecomposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"></fecomposite><feflood flood-color="black" flood-opacity="0.2" result="color"></feflood><fecomposite operator="in" in="color" in2="inverse" result="shadow"></fecomposite><fecomposite operator="over" in="shadow" in2="SourceGraphic"></fecomposite></filter></defs><path fill="#edebeb" stroke="none" d="M75,120L30,120A120,120,0,0,1,270,120L225,120A75,75,0,0,0,75,120Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="#7124ff" stroke="none" d="M75,120L30,120A120,120,0,0,1,241.92533317427734,42.86548683761529L207.45333323392336,71.79092927350956A75,75,0,0,0,75,120Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="150" y="117.64705882352942" text-anchor="middle" font-family="Arial" font-size="23px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 23px; font-weight: bold; fill-opacity: 1;" font-weight="bold" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><text x="150" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan></text><text x="52.5" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">-90</tspan></text><text x="247.5" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">90</tspan></text></svg></div>
+              <div class="val-slope">RPM</div>
+            </div>
+          </div>
+          <div class="distance">
+            <p style=" color: #000;margin-right: 20px; margin-left:20px">distance:</p>
+            <p class="value-temp" id="value-v0">777777</p>
+            <p id="value-name-unit">km</p>
+            <p style="color: #000;margin-left:140px; margin-right: 20px;">slope:</p>
+            <p class="value-temp" id="value-v31">8</p>
+          </div>
+        </div>
+      </div>
+      <div id="map-container" class="values value-block-2 ">
+        <div class="ind-val-main-temp">
+          <div style="display:flex;">
+            <div class="status">online</div>
+            <div class="switch">ON</div>
+          </div>
+          <a class="ind-val-2 ind-val-2-a">
+            <img src="./Login System_files/weather.png" alt="img" class="weatherLogo">
+            <p class="value-temperature" id="temperature">39</p>
+            <div>
+              <p id="value-name-unit-temp">°C</p>
+              <p class="value-humidity" id="humidity">40</p>
+            </div>
+          </a>
+
+          <a class="ind-val-2 ind-val-2-c">
+            <div>
+              <p class="temp-text">Controller </p>
+              <p class="temp-text">Temperature:</p>
+            </div>
+            <p class="value-temp" id="value-v3">56</p>
+            <p id="value-name-unit-temp">°C</p>
+          </a>
+          <a class="ind-val-2 ind-val-2-m">
+            <div>
+              <p class="temp-text">Motor </p>
+              <p class="temp-text">Temperature:</p>
+            </div>
+            <p class="value-temp" id="value-v4">68</p>
+            <p id="value-name-unit-temp">°C</p>
+          </a>
+        </div>
+      </div>
+      <div class="battery">
+        <div class="circle">
+          <div id="gauge"><svg height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.578125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.3.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><filter id="inner-shadow-gauge"><feoffset dx="0" dy="6"></feoffset><fegaussianblur result="offset-blur" stdDeviation="12"></fegaussianblur><fecomposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"></fecomposite><feflood flood-color="black" flood-opacity="0.8" result="color"></feflood><fecomposite operator="in" in="color" in2="inverse" result="shadow"></fecomposite><fecomposite operator="over" in="shadow" in2="SourceGraphic"></fecomposite></filter></defs><path fill="#edebeb" stroke="none" d="M54.81666666666666,150L9.966666666666669,150A139.53333333333333,139.53333333333333,0,0,1,289.0333333333333,150A139.53333333333333,139.53333333333333,0,0,1,9.966666666666669,150.00000000000003L54.81666666666666,150A94.68333333333334,94.68333333333334,0,0,0,244.18333333333334,150A94.68333333333334,94.68333333333334,0,0,0,54.81666666666666,150Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="#6d00fb" stroke="none" d="M54.81666666666666,150L9.966666666666669,150A139.53333333333333,139.53333333333333,0,0,1,289.0333333333333,150A139.53333333333333,139.53333333333333,0,0,1,216.72069599299266,272.2739920887871L195.11404370953073,232.97163748881985A94.68333333333334,94.68333333333334,0,0,0,244.18333333333334,150A94.68333333333334,94.68333333333334,0,0,0,54.81666666666666,150Z" transform="matrix(0,1,-1,0,299.5,0.5)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="#000000" stroke="none" d="M182.89093016577206,216.94436781884295L188.13124411243436,214.06348084771471L221.7622481924671,281.4445414954461Z" stroke-width="0" stroke-linecap="square" transform="matrix(0,1,-1,0,299.5,0.5)" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linecap: square;"></path><text x="149.5" y="162.1216216216216" text-anchor="middle" font-family="Arial" font-size="55px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 55px; font-weight: bold; fill-opacity: 1;" font-weight="bold" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">67</tspan></text><text x="149.5" y="180.8091216216216" text-anchor="middle" font-family="Arial" font-size="18px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 18px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">%</tspan></text><text x="52.325" y="180.8091216216216" text-anchor="middle" font-family="Arial" font-size="18px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 18px; font-weight: normal; fill-opacity: 0;" font-weight="normal" fill-opacity="0"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><text x="246.675" y="180.8091216216216" text-anchor="middle" font-family="Arial" font-size="18px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 18px; font-weight: normal; fill-opacity: 0;" font-weight="normal" fill-opacity="0"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text></svg></div>
+        </div>
+        <div class="ind-val-main">
+          <a class="ind-val-voltage">
+            <p class="parameter">voltage:</p>
+            <p class="value-bat" id="value-v0">67.56</p>
+            <p id="value-name-unit">V</p>
+          </a>
+          <a class="ind-val-current">
+            <p class="parameter">current:</p>
+            <p class="value-bat" id="value-v1">100.78</p>
+            <p id="value-name-unit">A</p>
+          </a>
+
+          <a class="ind-val-soc">
+            <p class="parameter">power:</p>
+            <p class="value-bat" id="value-v2">5690</p>
+            <p id="value-name-unit">W</p>
+          </a>
+          <a class="ind-val-power">
+            <p class="parameter">Error-code:</p>
+            <p class="value-bat" id="value-v33">61</p>
+            <p id="value-name-unit"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-2">
+      <div class="graph-border">
+        <canvas id="myChart-speedDist" class="graph-motion" width="500" height="180" style="display: block; box-sizing: border-box; height: 180px; width: 500px;"></canvas>
+        <canvas id="myChart-slope" class="graph-motion" width="500" height="180" style="display: block; box-sizing: border-box; height: 180px; width: 500px;"></canvas>
+      </div>
+      <div class="graph-border">
+        <canvas id="current" class="graph-motion" width="500" height="180" style="display: block; box-sizing: border-box; height: 180px; width: 500px;"></canvas>
+        <canvas id="voltage" class="graph-motion" width="500" height="180" style="display: block; box-sizing: border-box; height: 180px; width: 500px;"></canvas>
+      </div>
+      <div class="maps"></div>
+    </div>
+    <div>
+      <div id="map"></div>
+    </div>
+    <div style="display:flex;">
+
+
+      <canvas id="myChart" class="main-graph" width="-100px" height="0px"></canvas>
+    </div>
+    <p id="value-v31"></p>
+    <p id="value-v6"></p>
+  </div>
+  <script src="./Login System_files/script.js.download"></script>
+  <script>
+    function toggleCSS() {
+  var cssFile1 = '/static/dashboard-dark.css';
+  var cssFile2 = '/static/dashboard-light.css';
+  var link = document.getElementById('css-file');
+  
+  if (link.classList.contains('active')) {
+    link.href = cssFile1;
+    link.classList.remove('active');
+  } else {
+    link.href = cssFile2;
+    link.classList.add('active');
+  }
+}
+    </script>
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

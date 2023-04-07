@@ -1,0 +1,61 @@
+<%- include('navbar') -%>
+<div class="table-border">
+  <table id="variables-table" class="out-border";>
+    <thead style="color: white;">
+      <tr>
+        <th class="heading">Voltage</th>
+        <th class="heading">Current</th>
+        <th class="heading">SOC</th>
+        <th class="heading">power</th>
+        <th class="heading">controller temperature</th>
+        <th class="heading">motor temperature</th>
+        <th class="heading">speed</th>
+        <th class="heading">RPM</th>
+        <th class="heading">distance</th>
+        <th class="heading">slope</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let i = 0; i < 30; i++) { %>
+        <tr id="row<%= i %>">
+          <% for (let j = 0; j < 10; j++) { %>
+            <td class="col<%= j %> in-border" ></td>
+          <% } %>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+  <script>
+    $(document).ready(() => {
+      const numRows = 30;
+      let latestData = [];
+      setInterval(() => {
+        $.get('/raw-data/variables', data => {
+          const variables = data.variables;
+          if (variables.length > 0) {
+            const newData = variables[0].split(' ');
+            if (newData.length === 10) {
+              latestData.unshift(newData);
+              if (latestData.length > numRows) {
+                latestData.pop();
+              }
+              for (let i = 0; i < numRows; i++) {
+                if (i < latestData.length) {
+                  const values = latestData[i];
+                  for (let j = 0; j < 10; j++) {
+                    $(`#row${i} .col${j}`).text(values[j]);
+                  }
+                } else {
+                  for (let j = 0; j < 10; j++) {
+                    $(`#row${i} .col${j}`).text('');
+                  }
+                }
+              }
+            }
+          }
+        });
+      }, 1000);
+    });
+  </script>
+<%- include('footer') -%>

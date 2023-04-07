@@ -1,0 +1,15 @@
+<%- include('header') -%>
+
+<div class="" id="login">
+    <div class=" container-edit"> 
+        <!-- <a href="#" class="logo"></a>     -->
+        <button onclick="toggleCSS()" class="logo"></button>  
+        <a href="/route/dashboard" class="element-dash"> dashboard</a>
+        <a href="/route/dashboard2" class="element-dash"> dashboard2</a>
+        <a href="/route/dashboard3" class="element-dash"> dashboard3</a>
+        <a href="/raw-data/table" class="element-dash"> dashboard4</a>
+        <a href="/route/about" class="element-about"> about us</a>
+        <a class="element-user"><%= locals.user ? user : "User" %></a>
+        <a href="/route/logout" class="element-logout">Logout</a>
+    </div>
+</div>
